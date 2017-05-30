@@ -1,0 +1,37 @@
+title = "Strootje Blog"
+baseURL = "https://strootje.github.io"
+tags = ["portfolio", "web design", "blog"]
+languageCode = "en-US"
+config = "config.toml"
+theme = "osprey"
+canonifyURLS = true
+googleAnalytics = ""
+publishDir = "docs"
+
+[Params]
+    author = "Bas Stroosnijder"
+    description = "DevOps Engineer based in Utrecht, NL"
+    logoBig = "/images/osprey-logo.png"
+    logoSmall = "/images/osprey-logo.png"
+    favicon = "favicon.ico"
+    opengraphImage = "/images/osprey.png"
+    linkedin = "bas-stroosnijder"
+    github = "strootje"
+    email = ""
+    googleTagManger = ""
+    highlightJS = true
+    copyright = true
+    credit = true
+
+[[menu.main]]
+    name = "Work"
+    url  = "/#work"
+    weight = 1
+[[menu.main]]
+    name = "Blog"
+    url  = "/#blog"
+    weight = 2
+[[menu.main]]
+    name = "Contact"
+    url  = "/#contact"
+    weight = 3
