@@ -10,13 +10,13 @@ googleAnalytics = ""
 [Params]
     author = "Bas Stroosnijder"
     description = "DevOps Engineer based in Utrecht, NL"
-    logoBig = "/images/osprey-logo.png"
-    logoSmall = "/images/osprey-logo.png"
+    logoBig = "/images/profile.jpg"
+    logoSmall = "/images/profile.jpg"
     favicon = "favicon.ico"
     opengraphImage = "/images/osprey.png"
     linkedin = "bas-stroosnijder"
     github = "strootje"
-    email = ""
+    email = "bas@strootje.com"
     googleTagManger = ""
     highlightJS = true
     copyright = true
