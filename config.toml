@@ -1,36 +1,55 @@
-title = "Strootje Blog"
-baseURL = "https://strootje.github.io"
-tags = ["portfolio", "web design", "blog"]
-languageCode = "en-US"
-config = "config.toml"
-theme = "osprey"
-canonifyURLS = true
-googleAnalytics = ""
+baseURL = "http://strootje.com/"
+languageCode = "en-us"
+title = "Bas Stroosnijder"
+theme = "scarecrow"
 
-[Params]
+[params]
     author = "Bas Stroosnijder"
-    description = "DevOps Engineer based in Utrecht, NL"
-    logoBig = "/images/profile.jpg"
-    logoSmall = "/images/profile.jpg"
-    favicon = "favicon.ico"
-    opengraphImage = "/images/osprey.png"
-    linkedin = "bas-stroosnijder"
-    github = "strootje"
-    email = "bas@strootje.com"
-    googleTagManger = ""
-    highlightJS = true
-    copyright = true
-    credit = true
+    description = "Coding, Traveling, Sporting, etc..ing"
+    githubUsername = "#strootje"
+    accent = "red"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Quicksand" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "solarized-dark"
+    highlightLanguages = ["bash", "cpp", "javascript", "rust"]
 
 [[menu.main]]
-    name = "Work"
-    url  = "/#work"
+    url = "/"
+    name = "Home"
     weight = 1
+
 [[menu.main]]
-    name = "Blog"
-    url  = "/#blog"
+    url = "/post/"
+    name = "Posts"
     weight = 2
+
 [[menu.main]]
-    name = "Contact"
-    url  = "/#contact"
+    url = "/project/"
+    name = "Projects"
     weight = 3
+
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+[[menu.icon]]
+    url = "mailto:bas@strootje.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/strootje/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://www.stackoverflow.com/username/"
+    name = "stack-overflow"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/bas-stroosnijder/"
+    name = "linkedin"
+    weight = 4
