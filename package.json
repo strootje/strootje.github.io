@@ -1,0 +1,11 @@
+{
+	"private": true,
+	"name": "strootje.com",
+	"description": "My personal portfolio",
+	"version": "0.1.0",
+
+	"scripts": {
+		"serve": "echo TODO",
+		"deploy": "echo TODO"
+	}
+}
