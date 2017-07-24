@@ -3,9 +3,12 @@
 	"name": "strootje.com",
 	"description": "My personal portfolio",
 	"version": "0.1.0",
-
 	"scripts": {
-		"serve": "echo TODO",
+		"index": "hugo-lunr -o ./static/search/index.json",
+		"serve": "hugo server --watch --verbose",
 		"deploy": "echo TODO"
+	},
+	"dependencies": {
+		"hugo-lunr": "0.0.4"
 	}
 }

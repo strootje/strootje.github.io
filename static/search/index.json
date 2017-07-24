@@ -1,0 +1,34 @@
+[
+    {
+        "uri": "/about",
+        "title": "About",
+        "content": "",
+        "tags": []
+    },
+    {
+        "uri": "/post/first",
+        "title": "First Post",
+        "content": "\nMy first post\n",
+        "tags": [
+            "first"
+        ]
+    },
+    {
+        "uri": "/post/second",
+        "title": "Second",
+        "content": "",
+        "tags": []
+    },
+    {
+        "uri": "/post/third",
+        "title": "Third",
+        "content": "",
+        "tags": []
+    },
+    {
+        "uri": "/project/dotfiles",
+        "title": "Dotfiles",
+        "content": "",
+        "tags": []
+    }
+]
