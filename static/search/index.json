@@ -22,7 +22,7 @@
     {
         "uri": "/post/third",
         "title": "Third",
-        "content": "",
+        "content": "\n\njust some text.",
         "tags": []
     },
     {

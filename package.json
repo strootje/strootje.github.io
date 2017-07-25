@@ -1,14 +1,22 @@
 {
 	"private": true,
 	"name": "strootje.com",
-	"description": "My personal portfolio",
 	"version": "0.1.0",
+	"description": "My personal portfolio",
+
 	"scripts": {
-		"index": "hugo-lunr -o ./static/search/index.json",
+		"build:public": "hugo",
+		"build:index": "hugo-lunr -o ./static/search/index.json",
+		"build": "run-s build:public build:index",
+
 		"serve": "hugo server --watch --verbose",
-		"deploy": "echo TODO"
+
+		"predeploy": "run-s build",
+		"deploy": "./deploy.sh"
 	},
-	"dependencies": {
-		"hugo-lunr": "0.0.4"
+
+	"devDependencies": {
+		"hugo-lunr": "*",
+		"npm-run-all": "*"
 	}
 }

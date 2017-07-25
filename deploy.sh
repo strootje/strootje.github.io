@@ -1,6 +1,2 @@
 #!/usr/bin/env bash
-
-(hugo && cd ./public \
-	&& git add --all \
-	&& git commit -m "$1" \
-	&& git push origin master)
+(cd ./public && git add --all && git commit -m "$1" && git push origin master)
