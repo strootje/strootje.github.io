@@ -5,7 +5,7 @@
 	"description": "My personal portfolio",
 
 	"scripts": {
-		"build:public": "hugo",
+		"build:public": "hugo --verbose",
 		"build:index": "hugo-lunr -o ./static/search/index.json",
 		"build": "run-s build:public build:index",
 
