@@ -5,6 +5,4 @@ tags = []
 title = "Third"
 
 +++
-
-
 just some text.
