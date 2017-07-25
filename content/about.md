@@ -9,3 +9,4 @@ type = "page"
 
 this is some content
 niemand gaat deze pagina lezen...
+and even more text!
