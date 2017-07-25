@@ -1,31 +1,24 @@
+baseURL = "http://strootje.com/"
 languageCode = "en-us"
 theme = "scarecrow"
 title = "Bas Stroosnijder"
-baseURL = "http://strootje.com/"
-
+[[menu.main]]
+name = "Projects"
+url = "/project/"
+weight = 2
+[[menu.main]]
+name = "Posts"
+url = "/post/"
+weight = 1
+[[menu.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/bas-stroosnijder/"
+weight = 2
+[[menu.social]]
+name = "github"
+url = "https://github.com/strootje/"
+weight = 1
 [params]
-	author = "Bas Stroosnijder"
-	description = "Coding, Traveling, Sporting, etc..ing"
-
-
-	highlight = true
-
-[[menu.main]]
-	url = "/post/"
-	name = "Posts"
-	weight = 1
-
-[[menu.main]]
-	url = "/project/"
-	name = "Projects"
-	weight = 2
-
-[[menu.social]]
-	url = "https://github.com/strootje/"
-	name = "github"
-	weight = 1
-
-[[menu.social]]
-	url = "https://www.linkedin.com/in/bas-stroosnijder/"
-	name = "linkedin"
-	weight = 2
+author = "Bas Stroosnijder"
+description = "Coding, Traveling, Sporting, etc..ing"
+highlight = true
