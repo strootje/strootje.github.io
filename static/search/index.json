@@ -2,13 +2,13 @@
     {
         "uri": "/about",
         "title": "About",
-        "content": "",
+        "content": "\n\nthis is some content",
         "tags": []
     },
     {
         "uri": "/post/first",
         "title": "First Post",
-        "content": "\nMy first post\n",
+        "content": "My first post\n",
         "tags": [
             "first"
         ]
@@ -22,7 +22,7 @@
     {
         "uri": "/post/third",
         "title": "Third",
-        "content": "\n\njust some text.",
+        "content": "just some text.",
         "tags": []
     },
     {
