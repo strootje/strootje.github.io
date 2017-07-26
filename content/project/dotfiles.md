@@ -1,7 +1,9 @@
 +++
-categories = []
-date = "2017-07-19T20:26:35+02:00"
-tags = []
+draft = false
 title = "Dotfiles"
-
+date = "2017-07-26T22:26:06+02:00"
+categories = []
+tags = []
 +++
+
+dotfiles jeej!

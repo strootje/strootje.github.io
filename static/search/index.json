@@ -1,23 +1,33 @@
 [
     {
         "uri": "/about",
-        "title": "About",
-        "content": "\n\nthis is some content\nniemand gaat deze pagina lezen...\nand even more text!\n",
-        "tags": []
+        "title": "About me",
+        "content": "\nthis is some content\nniemand gaat deze pagina lezen...\nand even more text!\n",
+        "tags": [
+            "about",
+            "contact",
+            "bas"
+        ]
     },
     {
         "uri": "/post/first",
         "title": "First Post",
-        "content": "My first post\n",
+        "content": "\nfunc() {\n\t// ...\n}\n",
         "tags": [
-            "first"
+            "first",
+            "newby",
+            "rust"
         ]
     },
     {
         "uri": "/post/second",
         "title": "Second",
-        "content": "",
-        "tags": []
+        "content": "\n\nthere should be some text here!\n",
+        "tags": [
+            "another",
+            "content",
+            "rust"
+        ]
     },
     {
         "uri": "/post/third",
@@ -28,7 +38,7 @@
     {
         "uri": "/project/dotfiles",
         "title": "Dotfiles",
-        "content": "",
+        "content": "\ndotfiles jeej!\n",
         "tags": []
     }
 ]

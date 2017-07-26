@@ -5,18 +5,21 @@
 	"description": "My personal portfolio",
 
 	"scripts": {
+		"clean": "rimraf ./public/*",
 		"build:public": "hugo --verbose",
 		"build:index": "hugo-lunr -o ./static/search/index.json",
 		"build": "run-s build:public build:index",
 
+		"preserve": "run-s build:index",
 		"serve": "hugo server --watch --verbose",
 
-		"predeploy": "run-s build",
+		"predeploy": "run-s clean build",
 		"deploy": "./deploy.sh"
 	},
 
 	"devDependencies": {
 		"hugo-lunr": "*",
-		"npm-run-all": "*"
+		"npm-run-all": "*",
+		"rimraf": "*"
 	}
 }
