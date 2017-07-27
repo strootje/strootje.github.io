@@ -2,43 +2,10 @@
     {
         "uri": "/about",
         "title": "About me",
-        "content": "\nthis is some content\nniemand gaat deze pagina lezen...\nand even more text!\n",
+        "content": "\nI'm a very critical person and even more so as a coder. I like to challenge the “why” of things. This is why I'm not afraid to ask the tought questions. Purposfully taking the different side just to see if there might be any benefits to be found. I have a very analytic approuch this this. Taking a step back every once in a while to realize we're not going where we want to be going.\n\nI'm very pasionate about the projects I work on and want projects to succeed. This doesn't necessarily mean the product I wanted at the start but the thing I'm happy and proud about releasing to the public. Along the way there will be a lot of lessons to be learned, this is how I keep growing as a person and a coder.\n",
         "tags": [
             "about",
-            "contact",
-            "bas"
+            "contact"
         ]
-    },
-    {
-        "uri": "/post/first",
-        "title": "First Post",
-        "content": "\nfunc() {\n\t// ...\n}\n",
-        "tags": [
-            "first",
-            "newby",
-            "rust"
-        ]
-    },
-    {
-        "uri": "/post/second",
-        "title": "Second",
-        "content": "\n\nthere should be some text here!\n",
-        "tags": [
-            "another",
-            "content",
-            "rust"
-        ]
-    },
-    {
-        "uri": "/post/third",
-        "title": "Third",
-        "content": "just some text.",
-        "tags": []
-    },
-    {
-        "uri": "/project/dotfiles",
-        "title": "Dotfiles",
-        "content": "\ndotfiles jeej!\n",
-        "tags": []
     }
 ]

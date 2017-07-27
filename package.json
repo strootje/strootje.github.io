@@ -7,10 +7,11 @@
 	"scripts": {
 		"clean": "rimraf ./public/*",
 		"build:public": "hugo --verbose",
+		"build:thumbnails": "./resize.sh",
 		"build:index": "hugo-lunr -o ./static/search/index.json",
-		"build": "run-s build:public build:index",
+		"build": "run-s build:public build:thumbnails build:index",
 
-		"preserve": "run-s build:index",
+		"preserve": "run-p build:thumbnails build:index",
 		"serve": "hugo server --watch --verbose",
 
 		"predeploy": "run-s clean build",
