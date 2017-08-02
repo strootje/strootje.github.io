@@ -1,32 +1,35 @@
 languageCode = "en-us"
 
 theme = "scarecrow"
-baseURL = "https://strootje.github.io/"
+baseURL = "http://www.strootje.com/"
 title = "strootje"
 DefaultContentLanguage = "en"
+paginate = 6
 
 [taxonomies]
 	tag = "tags"
 
 [params]
+	author = "Bas Stroosnijder"
+	logo = "/images/logo.jpg"
 	font = "Poppins"
 	about = "about.md"
-	legal = "Bas Stroosnijder &copy; 'the current year'"
+	showRelated = true
 
-[[menu.main]]
-	name = "Projects"
-	url = "/project/"
-	weight = 2
 [[menu.main]]
 	name = "Posts"
 	url = "/post/"
 	weight = 1
-
-[[menu.social]]
-	name = "linkedin"
-	url = "https://www.linkedin.com/in/bas-stroosnijder/"
+[[menu.main]]
+	name = "Projects"
+	url = "/project/"
 	weight = 2
+
 [[menu.social]]
 	name = "github"
 	url = "https://github.com/strootje/"
 	weight = 1
+[[menu.social]]
+	name = "linkedin"
+	url = "https://www.linkedin.com/in/bas-stroosnijder/"
+	weight = 3

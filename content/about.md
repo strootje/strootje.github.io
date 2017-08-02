@@ -8,6 +8,6 @@ image = "/images/about.jpg"
 image_thumbnail = "/images/tbnl/about.jpg"
 +++
 
-I'm a very critical person and even more so as a coder. I like to challenge the “why” of things. This is why I'm not afraid to ask the tought questions. Purposfully taking the different side just to see if there might be any benefits to be found. I have a very analytic approuch this this. Taking a step back every once in a while to realize we're not going where we want to be going.
+I'm the kind of guy that is unable to do nothing. I'll always busy myself with something. One day I'll have this project in my head and won't stop talking about it and the next day I'll be nowhere to be found since I'm in the middle of nowhere, hiking or biking.
 
-I'm very pasionate about the projects I work on and want projects to succeed. This doesn't necessarily mean the product I wanted at the start but the thing I'm happy and proud about releasing to the public. Along the way there will be a lot of lessons to be learned, this is how I keep growing as a person and a coder.
+Everything I do is under extreme criticism, this is both my biggest advantage and my greatest downfall. This takes shape in a lot of trail and error. My point of reflection is very early in the process because of this. I love change. Trying a different approuch then the rest. But I an very weary of change because of change.
