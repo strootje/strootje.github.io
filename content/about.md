@@ -1,7 +1,7 @@
 +++
 draft = false
 title = "About me"
-date = "2017-07-27T07:02:54+02:00"
+date = "2017-07-27T07:02:55+02:00"
 tags = [ "about", "contact" ]
 
 image = "/images/about.jpg"
