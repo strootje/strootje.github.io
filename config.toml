@@ -6,24 +6,49 @@ title = "strootje"
 DefaultContentLanguage = "en"
 paginate = 6
 
-[taxonomies]
-	tag = "tags"
+[languages.en]
+languageName = "English"
+weight = 1
+# [languages.nl]
+# languageName = "Nederlands"
+# weight = 2
 
 [params]
 	author = "Bas Stroosnijder"
 	logo = "/images/logo.jpg"
 	font = "Poppins"
-	about = "about.md"
 	showRelated = true
+	showHeaders = false
+	[params.about]
+		title = "Bas Stroosnijder"
+		tagline = "FOSS since 1991"
+		[params.about.logo]
+			src = "/images/about.jpg"
+	[[params.poweredBy]]
+		title = "Hugo"
+		url = "https://gohugo.io"
+	[[params.poweredBy]]
+		title = "Scarecrow"
+		url = "https://strootje.com/projs/scarecrow"
+	# [[params.poweredBy]]
+	# 	title = "Bulma"
+	# 	url = "https://bulma.io"
+	# 	badge = "https://bulma.io/images/made-with-bulma--black.png"
+	# [params.widgets]
+	# 	sidebar = [ "powered-by" ]
 
 [[menu.main]]
-	name = "Posts"
-	url = "/post/"
+	name = "Home"
+	url = "/"
 	weight = 1
 [[menu.main]]
-	name = "Projects"
-	url = "/project/"
+	name = "About"
+	url = "/about/"
 	weight = 2
+# [[menu.main]]
+# 	name = "Booklist"
+# 	url = "/books/"
+# 	weight = 3
 
 [[menu.social]]
 	name = "github"

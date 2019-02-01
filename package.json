@@ -3,23 +3,18 @@
 	"name": "strootje.com",
 	"version": "0.1.0",
 	"description": "My personal portfolio",
-
 	"scripts": {
 		"clean": "rimraf ./public/*",
-		"build:public": "hugo --verbose",
-		"build:thumbnails": "./resize.sh",
-		"build:index": "hugo-lunr -o ./static/search/index.json",
-		"build": "run-s build:public build:thumbnails build:index",
-
-		"preserve": "run-p build:thumbnails build:index",
+		"build:theme": "(cd ./themes/scarecrow && yarn)",
+		"preinstall": "run-s build:theme",
+		"prebuild": "run-p build:theme",
+		"build": "hugo --verbose",
+		"preserve": "run-s prebuild",
 		"serve": "hugo server --watch --verbose",
-
 		"predeploy": "run-s clean build",
 		"deploy": "./deploy.sh"
 	},
-
 	"devDependencies": {
-		"hugo-lunr": "*",
 		"npm-run-all": "*",
 		"rimraf": "*"
 	}
