@@ -1,9 +1,8 @@
 ---
 pinned: true
-title: Hello World
-tagline: Because i can
+title: An introduction
 date: "2018-12-31"
-categories: first-post
+categories: personal
 tags:
 - blog
 
