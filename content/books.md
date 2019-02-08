@@ -1,9 +1,11 @@
 ---
+draft: true
 title: Books
 layout: filtered-by-category
-query: books
 
-tags:
-- fiction
-- non-fiction
+query:
+- categories: books
+- tags:
+  - fiction
+  - non-fiction
 ---
