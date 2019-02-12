@@ -1,7 +1,7 @@
 ---
 pinned: true
 title: An introcutory of myself
-date: "2018-02-15T06:00:00"
+date: "2019-02-15T06:00:00"
 categories: personal
 tags:
 - blog
