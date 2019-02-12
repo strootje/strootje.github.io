@@ -10,3 +10,8 @@ categories: personal
 * expand with my own ambitions and desires
 -->
 
+{{< tagcloud >}}
+	html, css, javascript, typescript,
+{{< /tagcloud>}}
+
+{{< tag-cloud categories="devblog, tutorial" whitelist="" blacklist="" >}}
