@@ -1,8 +1,8 @@
 ---
-draft: true
+draft: false
 pinned: true
 title: Review - Personal Trainer Luc Ludkiewicz
-date: "2019-02-22T06:00:00"
+date: "2018-02-22T06:00:00"
 categories: review
 tags:
 - blog
