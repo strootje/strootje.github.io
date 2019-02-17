@@ -1,5 +1,5 @@
-language: node_js
-node_js: node
+language: go
+go: go1.8
 cache: npm
 
 script:
