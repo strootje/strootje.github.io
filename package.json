@@ -6,7 +6,6 @@
 	"scripts": {
 		"clean": "rimraf ./public/*",
 		"build:theme": "(cd ./themes/scarecrow && npm install)",
-		"preinstall": "run-s build:theme",
 		"prebuild": "run-p build:theme",
 		"build": "hugo --verbose",
 		"preserve": "run-s prebuild",
