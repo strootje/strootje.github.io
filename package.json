@@ -5,7 +5,7 @@
 	"description": "My personal portfolio",
 	"scripts": {
 		"clean": "rimraf ./public/*",
-		"build:theme": "(cd ./themes/scarecrow && yarn)",
+		"build:theme": "(cd ./themes/scarecrow && npm install)",
 		"preinstall": "run-s build:theme",
 		"prebuild": "run-p build:theme",
 		"build": "hugo --verbose",
