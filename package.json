@@ -10,12 +10,11 @@
 		"build": "hugo --verbose",
 		"preserve": "run-s prebuild",
 		"serve": "hugo server --watch --verbose",
-		"predeploy": "run-s clean build",
-		"deploy": "./deploy.sh"
+		"predeploy": "run-s clean build"
 	},
 	"devDependencies": {
+		"hugo-bin": "*",
 		"npm-run-all": "*",
 		"rimraf": "*"
-	},
-	"dependencies": {}
+	}
 }
