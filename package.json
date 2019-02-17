@@ -17,5 +17,6 @@
 	"devDependencies": {
 		"npm-run-all": "*",
 		"rimraf": "*"
-	}
+	},
+	"dependencies": {}
 }
