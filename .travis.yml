@@ -1,6 +1,13 @@
-language: go
-go: go1.8
+language: minimal
 cache: npm
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-3.4
+    - g++-3.4
 
 script:
 - npm run build
