@@ -2,9 +2,6 @@ language: node_js
 node_js: node
 cache: npm
 
-before_script:
-- sudo apt-get install -qq hugo
-
 script:
 - npm run build
 
