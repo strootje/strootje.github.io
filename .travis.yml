@@ -10,6 +10,9 @@ addons:
     - gcc-4.9
     - libstdc++6
 
+before_script:
+- unset LD_LIBRARY_PATH
+
 script:
 - npm run build
 
