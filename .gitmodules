@@ -1,8 +1,3 @@
-[submodule "public"]
-	path = public
-	url = git@github.com:strootje/strootje.github.io.git
-	branch = master
-[submodule "themes/osprey"]
-	path = themes/osprey
-	url = https://github.com/tomanistor/osprey.git
-	branch = master
+[submodule "themes/scarecrow"]
+	path = themes/scarecrow
+	url = https://github.com/strootje/hugo-scarecrow-theme.git

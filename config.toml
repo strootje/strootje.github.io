@@ -1,36 +1,60 @@
-title = "Strootje Blog"
-baseURL = "https://strootje.github.io"
-tags = ["portfolio", "web design", "blog"]
-languageCode = "en-US"
-config = "config.toml"
-theme = "osprey"
-canonifyURLS = true
-googleAnalytics = ""
+languageCode = "en-us"
 
-[Params]
-    author = "Bas Stroosnijder"
-    description = "DevOps Engineer based in Utrecht, NL"
-    logoBig = "/images/profile.jpg"
-    logoSmall = "/images/profile.jpg"
-    favicon = "favicon.ico"
-    opengraphImage = "/images/osprey.png"
-    linkedin = "bas-stroosnijder"
-    github = "strootje"
-    email = "bas@strootje.com"
-    googleTagManger = ""
-    highlightJS = true
-    copyright = true
-    credit = true
+theme = "scarecrow"
+baseURL = "http://www.strootje.com/"
+title = "strootje"
+DefaultContentLanguage = "en"
+paginate = 6
+
+[languages.en]
+languageName = "English"
+weight = 1
+# [languages.nl]
+# languageName = "Nederlands"
+# weight = 2
+
+[params]
+	author = "Bas Stroosnijder"
+	logo = "/images/logo.jpg"
+	font = "Poppins"
+	showRelated = true
+	showHeaders = false
+	[params.about]
+		title = "Bas Stroosnijder"
+		tagline = "FOSS since 1991"
+		[params.about.logo]
+			src = "/images/about.jpg"
+	[[params.poweredBy]]
+		title = "Hugo"
+		url = "https://gohugo.io"
+	[[params.poweredBy]]
+		title = "Scarecrow"
+		url = "https://strootje.com/projs/scarecrow"
+	# [[params.poweredBy]]
+	# 	title = "Bulma"
+	# 	url = "https://bulma.io"
+	# 	badge = "https://bulma.io/images/made-with-bulma--black.png"
+	# [params.widgets]
+	# 	sidebar = [ "powered-by" ]
 
 [[menu.main]]
-    name = "Work"
-    url  = "/#work"
-    weight = 1
+	name = "Home"
+	url = "/"
+	weight = 1
 [[menu.main]]
-    name = "Blog"
-    url  = "/#blog"
-    weight = 2
+	name = "About"
+	url = "/about/"
+	weight = 2
 [[menu.main]]
-    name = "Contact"
-    url  = "/#contact"
-    weight = 3
+	name = "Contact"
+	url = "/contact/"
+	weight = 3
+
+[[menu.social]]
+	name = "github"
+	url = "https://github.com/strootje/"
+	weight = 1
+[[menu.social]]
+	name = "linkedin"
+	url = "https://www.linkedin.com/in/bas-stroosnijder/"
+	weight = 3

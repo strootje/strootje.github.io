@@ -1,0 +1,19 @@
+{
+	"private": true,
+	"name": "strootje.com",
+	"version": "0.1.0",
+	"description": "My personal portfolio",
+	"scripts": {
+		"clean": "rimraf ./public/*",
+		"build:theme": "(cd ./themes/scarecrow && npm install)",
+		"prebuild": "run-p build:theme",
+		"build": "hugo --verbose",
+		"preserve": "run-s prebuild",
+		"serve": "hugo server --watch --verbose",
+		"predeploy": "run-s clean build"
+	},
+	"devDependencies": {
+		"npm-run-all": "*",
+		"rimraf": "*"
+	}
+}
