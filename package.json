@@ -13,11 +13,7 @@
 		"predeploy": "run-s clean build"
 	},
 	"devDependencies": {
-		"hugo-bin": "*",
 		"npm-run-all": "*",
 		"rimraf": "*"
-	},
-	"hugo-bin": {
-		"buildTags": "extended"
 	}
 }
