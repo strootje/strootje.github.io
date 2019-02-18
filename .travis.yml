@@ -3,7 +3,8 @@ node_js: node
 cache: npm
 
 install:
-- go get github.com/spf13/hugo
+- wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb
+- sudo dpkg -i hugo_0.54.0_Linux-64bit.deb
 - npm install
 
 script:
