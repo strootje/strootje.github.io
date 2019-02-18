@@ -1,11 +1,6 @@
-language: go
-go: go1.8
+language: node_js
+node_js: node
 cache: npm
-
-addons:
-  apt:
-    packages:
-    - npm
 
 install:
 - go get github.com/spf13/hugo
