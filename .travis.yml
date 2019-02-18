@@ -1,17 +1,14 @@
-language: node_js
-node_js: node
+language: go
+go: go1.8
 cache: npm
 
 addons:
   apt:
-    sources:
-    - ubuntu-toolchain-r-test
     packages:
-    - gcc-4.9
-    - libstdc++6
+    - npm
 
-before_script:
-- unset LD_LIBRARY_PATH
+install:
+- npm install
 
 script:
 - npm run build
