@@ -9,9 +9,9 @@ paginate = 6
 [languages.en]
 languageName = "English"
 weight = 1
-# [languages.nl]
-# languageName = "Nederlands"
-# weight = 2
+[languages.nl]
+languageName = "Nederlands"
+weight = 2
 
 [params]
 	author = "Bas Stroosnijder"
