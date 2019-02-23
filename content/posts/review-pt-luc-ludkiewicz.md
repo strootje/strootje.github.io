@@ -15,7 +15,8 @@ So I've decided to hire a Personal Trainer.
 <!--more-->
 
 {{< person avatar="https://www.basic-fit.com/Cms_Data/Contents/BasicFit_NL-NL/Media/PersonalTrainers/Luc-Ludkiewicz-Website.jpg?w=120&format=jpg" website="http://futureu.biz/" name="Luc Ludkiewicz" title="personal trainer" >}}
-	Helping my clients grow, physically as well as mentally, by means of sports is my goal. My motto is: "Do something today that your future self will thank you for..."
+	Helping my clients grow, physically as well as mentally, by means of sports is my goal.
+	My motto is: "Do something today that your future self will thank you for..."
 {{< /person >}}
 
 
