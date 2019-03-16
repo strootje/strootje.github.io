@@ -5,15 +5,16 @@
 	"description": "My personal portfolio",
 	"scripts": {
 		"clean": "rimraf ./public/*",
-		"build:theme": "(cd ./themes/scarecrow && npm install)",
-		"prebuild": "run-p build:theme",
+		"build:theme": "(cd ./themes/scarecrow && pnpm install)",
+		"prebuild": "pnpm run build:theme",
 		"build": "hugo --verbose",
-		"preserve": "run-s prebuild",
+		"preserve": "pnpm run prebuild",
 		"serve": "hugo server --watch --verbose",
-		"predeploy": "run-s clean build"
+		"preserve:dev": "pnpm run prebuild",
+		"serve:dev": "hugo server --watch --verbose --buildFuture --buildDrafts",
+		"predeploy": "pnpm run clean && pnpm run build"
 	},
 	"devDependencies": {
-		"npm-run-all": "*",
 		"rimraf": "*"
 	}
 }
