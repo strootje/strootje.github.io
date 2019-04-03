@@ -53,12 +53,12 @@ weight = 2
 	weight = 3
 
 [[menu.social]]
-	title = "github"
+	name = "github"
 	url = "https://github.com/strootje/"
-	pre = "fab fa-github"
+	pre = "fab fa-fw fa-lg fa-github"
 	weight = 1
 [[menu.social]]
-	title = "linkedin"
+	name = "linkedin"
 	url = "https://www.linkedin.com/in/bas-stroosnijder/"
-	pre = "fab fa-linkedin"
+	pre = "fab fa-fw fa-lg fa-linkedin"
 	weight = 3
