@@ -24,6 +24,8 @@ weight = 2
 		tagline = "FOSS since 1991"
 		[params.about.logo]
 			src = "/images/about.jpg"
+	[params.menu.social]
+		target = "blank"
 	[params.widgets]
 		sidebar = [ "powered-by" ]
 	[[params.poweredBy]]
