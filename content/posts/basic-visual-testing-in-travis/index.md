@@ -29,12 +29,18 @@ Since I moved away from developing websites a few years ago I have had a blissfu
 
 So the question became, how do you manually test for differences in different browsers. Well, most of it is just opening a page, the homepage for example, in multiple browsers and then comparing the difference rendered by the engine.
 
-{{< resource "firefox-before" >}}
-	Homepage rendered in firefox
-{{</ resource >}}
-{{< resource "chrome-before" >}}
-	Homepage rendered in chrome
-{{</ resource >}}
+{{< columns >}}
+	{{< column >}}
+		{{< resource "firefox-before" >}}
+			Homepage rendered in firefox
+		{{</ resource >}}
+	{{</ column >}}
+	{{< column >}}
+		{{< resource "chrome-before" >}}
+			Homepage rendered in chrome
+		{{</ resource >}}
+	{{</ column >}}
+{{</ columns >}}
 
 Getting these screenshots is the tricky part. But most major browsers these days have a headless mode. This allows you to launch the browser from the command line. For this, I used a library called [Puppeteer][puppeteer]. This is, in essence, just a wrapper around the cli of the browser. But neatly packaged as a node package. This removed the need to manually spawn processes from within nodejs.
 
