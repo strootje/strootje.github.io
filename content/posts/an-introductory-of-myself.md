@@ -12,7 +12,7 @@ tags:
 
 > To see what I can do for you, see [this][page:about] page.
 
-Hi, my name is *Bastiaan Stroosnijder*, but good luck pronouncing that. My friends just call me *Bas*. I'm a 29 year old web/software engineer currently living in the Ntherlands. In July of 2017 they found a critical bug in genetic code which made my heartmuscle grow a lot larger that normal. As there is no fix yet, the surgeon proposed a workaround that consisted of adding an `display: none;` to the `.septim {}` class of my heart.
+Hi, my name is *Bastiaan Stroosnijder*, but good luck pronouncing that. My friends just call me *Bas*. I'm a 28 year old web/software engineer currently living in the Ntherlands. In July of 2017 they found a critical bug in genetic code which made my heartmuscle grow a lot larger that normal. As there is no fix yet, the surgeon proposed a workaround that consisted of adding an `display: none;` to the `.septim {}` class of my heart.
 
 Currently I'm the Lead Developer of one of the teams at *PGGM* where, together with about ten other teams, we are working hard at rebuilding and improving an old monolithic in-house piece of software. I derive satisfaction from setting up automatic process which help us improve the quality of our part of software and sharing that knowledge in-house. At PGGM we build mainly proprietary software, but I have a certain love for everything open source. You can always find me working on something over at my [Github Account][github].
 
