@@ -1,52 +1,69 @@
 languageCode = "en-us"
 
 theme = "scarecrow"
-baseURL = "https://www.strootje.com/"
 title = "strootje"
+baseURL = "https://www.strootje.com/"
 DefaultContentLanguage = "en"
 paginate = 6
 
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsOptions = "linenos=true"
+
 [languages.en]
-languageName = "English"
-weight = 1
-[languages.nl]
-languageName = "Nederlands"
-weight = 2
+	languageName = "English"
+	# contentDir = "content/en"
+	weight = 1
 
 [params]
-	author = "Bas Stroosnijder"
-	logo = "/images/logo.jpg"
-	font = "Poppins"
-	showRelated = true
-	showHeaders = false
-	[params.about]
-		title = "Bas Stroosnijder"
+	[params.options]
+		showRelated = true
+		font = "Poppins"
+	[params.author]
+		name = "Bas Stroosnijder"
 		tagline = "FOSS since 1991"
-		[params.about.logo]
-			src = "/images/about.jpg"
+		logo = "images/about.jpg"
 	[params.menu.social]
 		target = "blank"
 
 [[menu.main]]
-	name = "Home"
-	url = "/"
-	weight = 1
-[[menu.main]]
 	name = "About"
-	url = "/about/"
-	weight = 2
-[[menu.main]]
-	name = "Contact"
-	url = "/contact/"
-	weight = 3
+	weight = 100
+	title = "about"
+	url = "/about"
+# [[menu.main]]
+# 	name = "Contact"
+# 	weight = 200
+# 	title = "contact"
+# 	url = "/contact/"
 
 [[menu.social]]
-	name = "github"
-	url = "https://github.com/strootje/"
-	pre = "fab fa-fw fa-lg fa-github"
-	weight = 1
-[[menu.social]]
-	name = "linkedin"
+	name = "LinkedIn"
+	weight = 100
+	title = "linkedin"
 	url = "https://www.linkedin.com/in/bas-stroosnijder/"
-	pre = "fab fa-fw fa-lg fa-linkedin"
-	weight = 3
+	pre = "fab fa-linkedin-in"
+# [[menu.social]]
+# 	name = "Instagram"
+# 	weight = 200
+# 	title = "instagram"
+# 	url = "https://instagram.com/<insert-name-here>"
+# 	pre = "fab fa-instagram"
+[[menu.social]]
+	name = "Github"
+	weight = 300
+	title = "github"
+	url = "https://github.com/strootje"
+	pre = "fab fa-github-alt"
+# [[menu.social]]
+# 	name = "Stackoverflow"
+# 	weight = 400
+# 	title = "stackoverflow"
+# 	url = "https://stackoverflow.com/users/9943786/strootje"
+# 	pre = "fab fa-stack-overflow"
+[[menu.social]]
+	name = "RSS"
+	weight = 500
+	title = "rss"
+	url = "/posts/index.xml"
+	pre = "fas fa-rss"
