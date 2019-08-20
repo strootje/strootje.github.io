@@ -1,6 +1,7 @@
 ---
 pinned: true
 title: Basic Visual Testing Automated in Travis
+slug: basic-visual-testing-in-travis
 date: "2019-03-15T06:00:00"
 categories: testing
 tags:
@@ -28,6 +29,11 @@ Ever since I have worked on websites I always hated the proces to testing pages 
 Since I moved away from developing websites a few years ago I have had a blissful development life, without IE and all of it's problems.  I've also picked up a habit called Test Driven Development (TDD) and I wasn't about to let some browser browser stop me from automating this proces.
 
 So the question became, how do you manually test for differences in different browsers. Well, most of it is just opening a page, the homepage for example, in multiple browsers and then comparing the difference rendered by the engine.
+
+{{< columns >}}
+	{{< resources/image "firefox-before" "Homepage rendered in firefox" >}}
+	{{< resources/image "chrome-before" "Homepage rendered in chrome" >}}
+{{</ columns >}}
 
 Getting these screenshots is the tricky part. But most major browsers these days have a headless mode. This allows you to launch the browser from the command line. For this, I used a library called [Puppeteer][puppeteer]. This is, in essence, just a wrapper around the cli of the browser. But neatly packaged as a node package. This removed the need to manually spawn processes from within nodejs.
 

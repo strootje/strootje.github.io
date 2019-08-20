@@ -2,6 +2,9 @@
 
 # Strootje.com
 
+TODO:
+https://docs.travis-ci.com/user/deployment/custom/
+
 ## Themes
 * [pulp](https://themes.gohugo.io//theme/pulp/post/)
 * [Cacao Enhanced](https://themes.gohugo.io//theme/cocoa-eh-hugo-theme/)

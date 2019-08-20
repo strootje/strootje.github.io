@@ -12,58 +12,32 @@ pygmentsOptions = "linenos=true"
 
 [languages.en]
 	languageName = "English"
-	# contentDir = "content/en"
+	contentDir = "content/en"
 	weight = 1
 
 [params]
-	[params.options]
-		showRelated = true
-		font = "Poppins"
-	[params.author]
-		name = "Bas Stroosnijder"
-		tagline = "FOSS since 1991"
-		logo = "images/about.jpg"
-	[params.menu.social]
-		target = "blank"
+	callToAction = "/contact"
+[params.options]
+	showCallToAction = false
+	showFollow = true
+	showRelated = true
+	showShare = true
+[params.author]
+	name = "Bas Stroosnijder"
+	tagline = "FOSS since 1991"
+	logo = "images/about.jpg"
+[params.social]
+	github = "strootje"
+	linkedin = "bas-stroosnijder"
+	rss = "posts"
 
 [[menu.main]]
 	name = "About"
 	weight = 100
 	title = "about"
 	url = "/about"
-# [[menu.main]]
-# 	name = "Contact"
-# 	weight = 200
-# 	title = "contact"
-# 	url = "/contact/"
-
-[[menu.social]]
-	name = "LinkedIn"
-	weight = 100
-	title = "linkedin"
-	url = "https://www.linkedin.com/in/bas-stroosnijder/"
-	pre = "fab fa-linkedin-in"
-# [[menu.social]]
-# 	name = "Instagram"
-# 	weight = 200
-# 	title = "instagram"
-# 	url = "https://instagram.com/<insert-name-here>"
-# 	pre = "fab fa-instagram"
-[[menu.social]]
-	name = "Github"
-	weight = 300
-	title = "github"
-	url = "https://github.com/strootje"
-	pre = "fab fa-github-alt"
-# [[menu.social]]
-# 	name = "Stackoverflow"
-# 	weight = 400
-# 	title = "stackoverflow"
-# 	url = "https://stackoverflow.com/users/9943786/strootje"
-# 	pre = "fab fa-stack-overflow"
-[[menu.social]]
-	name = "RSS"
-	weight = 500
-	title = "rss"
-	url = "/posts/index.xml"
-	pre = "fas fa-rss"
+[[menu.main]]
+	name = "Contact"
+	weight = 200
+	title = "contact"
+	url = "/contact/"

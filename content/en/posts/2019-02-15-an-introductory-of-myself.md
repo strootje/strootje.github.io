@@ -1,6 +1,7 @@
 ---
 pinned: true
 title: An introductory of myself
+slug: an-introductory-of-myself
 date: "2019-02-15T06:00:00"
 categories: personal
 tags:
