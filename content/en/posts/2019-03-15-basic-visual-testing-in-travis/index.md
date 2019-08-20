@@ -1,6 +1,7 @@
 ---
 pinned: true
 title: Basic Visual Testing Automated in Travis
+slug: basic-visual-testing-in-travis
 date: "2019-03-15T06:00:00"
 categories: testing
 tags:
@@ -30,23 +31,15 @@ Since I moved away from developing websites a few years ago I have had a blissfu
 So the question became, how do you manually test for differences in different browsers. Well, most of it is just opening a page, the homepage for example, in multiple browsers and then comparing the difference rendered by the engine.
 
 {{< columns >}}
-	{{< column >}}
-		{{< resource "firefox-before" >}}
-			Homepage rendered in firefox
-		{{</ resource >}}
-	{{</ column >}}
-	{{< column >}}
-		{{< resource "chrome-before" >}}
-			Homepage rendered in chrome
-		{{</ resource >}}
-	{{</ column >}}
+	{{< resources/image "firefox-before" "Homepage rendered in firefox" >}}
+	{{< resources/image "chrome-before" "Homepage rendered in chrome" >}}
 {{</ columns >}}
 
 Getting these screenshots is the tricky part. But most major browsers these days have a headless mode. This allows you to launch the browser from the command line. For this, I used a library called [Puppeteer][puppeteer]. This is, in essence, just a wrapper around the cli of the browser. But neatly packaged as a node package. This removed the need to manually spawn processes from within nodejs.
 
 I used the following code in my tests to spawn the browsers. Before the test suite is started I create all the browsers I need. This saves a huge deal in an automated test, not having the start new browsers every tests. As of this writing I'm only testing in firefox and chrome, since I haven't figured out yet how to launch IE in headless mode.
 
-{{< highlight typescript >}}
+```typescript
 // Before hook for test suite
 before(async function() {
 	this.timeout(0);
@@ -63,14 +56,14 @@ async function capture(browser: Browser, viewport: Viewport, url: string, path: 
 	await page.goto(`http://localhost:1313${url}`);
 	return await page.screenshot({ fullPage: true, path: path });
 }
-{{</ highlight >}}
+```
 
 The capture method is passed on of the browsers, the viewport width and height to run the page and the path to open in the browsers.
 With all those arguments puppeteer is able to open a new page, resize it to the specified dimensions, nagivate to the page and take a screenshot.
 
 The tests themselfs become very easy now. It's just a matter of comparing two screenshots from different browsers and making sure they match. Enter the world of javascript image comparison libraries. There are a lot of tools out there but I found that [ResembleJS][resemblejs], one of the more known and popular libraries in this field, meets all of my needs. [ResembleJS][resemblejs] is fairly simple in it's workings. It just takes the two images you provide it and does a pixel compare, allowing you to ignore certain things, like colors or antialiasing.
 
-{{< highlight typescript >}}
+```typescript
 // Run this method for each page / resolution
 async function run(url: string, res: Resolution, threshold: number, browsers: Browser[]): Promise<void> {
 	const safeUrl = url.replace(/\//g, '_');
@@ -97,11 +90,11 @@ async function run(url: string, res: Resolution, threshold: number, browsers: Br
 		});
 	}
 }
-{{</ highlight >}}
+```
 
 Bringing this all together on a development machine is one thing, but these tests should be run on every pull request. And since [Travis][travis] has great support for running mocha tests we will use that as our build agent.
 
-{{< highlight yml >}}
+```yml
 language: node_js
 node_js: node
 
@@ -120,7 +113,7 @@ install:
 
 script:
 - npm run test
-{{</ highlight >}}
+```
 
 Note the addons used in this file. We use the latest version of firefox and the stable version of chrome in order to ensure we run on the latest version of both.
 This enabled github to make sure a pull request can only pass if the page looks the same on chrome and firefox. removing my burden to test these to browsers myself.

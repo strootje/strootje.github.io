@@ -1,6 +1,7 @@
 ---
 pinned: true
 title: Review - Personal Trainer Luc Ludkiewicz
+slug: review-pt-luc-ludkiewicz
 date: "2019-02-22T06:00:00"
 categories: personal
 tags:
@@ -14,11 +15,14 @@ So I've decided to hire a Personal Trainer.
 
 <!--more-->
 
-{{< person avatar="https://www.basic-fit.com/Cms_Data/Contents/BasicFit_NL-NL/Media/PersonalTrainers/Luc-Ludkiewicz-Website.jpg?w=120&format=jpg" website="http://futureu.biz/" name="Luc Ludkiewicz" title="personal trainer" >}}
-	Helping my clients grow, physically as well as mentally, by means of sports is my goal.
-	My motto is: "Do something today that your future self will thank you for..."
+{{< person
+	avatar="https://www.basic-fit.com/Cms_Data/Contents/BasicFit_NL-NL/Media/PersonalTrainers/Luc-Ludkiewicz-Website.jpg?w=120&format=jpg"
+	website="http://futureu.biz/"
+	name="Luc Ludkiewicz"
+	title="personal trainer"
+>}}
+	Helping my clients grow, physically as well as mentally, by means of sports is my goal. My motto is: "Do something today that your future self will thank you for..."
 {{< /person >}}
-
 
 The intake was quite unusual. First of all, he approached me in my gym. Apparently I wasn't squatting properly. We had a big discussion about what is and isn't the proper way to squat and he even showed and helped me with my squat. Bear in mind that he approached me and I hadn't payed a dime yet.
 After that he told me we could do a free introduction session, where he'd go along with me to see if I could improve in other area's as well.

@@ -1,6 +1,7 @@
 ---
 pinned: true
 title: Why I love sports so much
+slug: why-i-love-sports-so-much
 date: "2019-08-06T06:00:00"
 categories: personal
 tags:

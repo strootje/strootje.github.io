@@ -1,52 +1,43 @@
 languageCode = "en-us"
 
 theme = "scarecrow"
-baseURL = "https://www.strootje.com/"
 title = "strootje"
+baseURL = "https://www.strootje.com/"
 DefaultContentLanguage = "en"
 paginate = 6
 
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsOptions = "linenos=true"
+
 [languages.en]
-languageName = "English"
-weight = 1
-[languages.nl]
-languageName = "Nederlands"
-weight = 2
+	languageName = "English"
+	contentDir = "content/en"
+	weight = 1
 
 [params]
-	author = "Bas Stroosnijder"
-	logo = "/images/logo.jpg"
-	font = "Poppins"
+	callToAction = "/contact"
+[params.options]
+	showCallToAction = false
+	showFollow = true
 	showRelated = true
-	showHeaders = false
-	[params.about]
-		title = "Bas Stroosnijder"
-		tagline = "FOSS since 1991"
-		[params.about.logo]
-			src = "/images/about.jpg"
-	[params.menu.social]
-		target = "blank"
+	showShare = true
+[params.author]
+	name = "Bas Stroosnijder"
+	tagline = "FOSS since 1991"
+	logo = "images/about.jpg"
+[params.social]
+	github = "strootje"
+	linkedin = "bas-stroosnijder"
+	rss = "posts"
 
-[[menu.main]]
-	name = "Home"
-	url = "/"
-	weight = 1
 [[menu.main]]
 	name = "About"
-	url = "/about/"
-	weight = 2
+	weight = 100
+	title = "about"
+	url = "/about"
 [[menu.main]]
 	name = "Contact"
+	weight = 200
+	title = "contact"
 	url = "/contact/"
-	weight = 3
-
-[[menu.social]]
-	name = "github"
-	url = "https://github.com/strootje/"
-	pre = "fab fa-fw fa-lg fa-github"
-	weight = 1
-[[menu.social]]
-	name = "linkedin"
-	url = "https://www.linkedin.com/in/bas-stroosnijder/"
-	pre = "fab fa-fw fa-lg fa-linkedin"
-	weight = 3
