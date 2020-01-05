@@ -4,15 +4,13 @@
 	"version": "0.1.0",
 	"description": "My personal portfolio",
 	"scripts": {
+		"preinstall": "(cd ./themes/scarecrow && pnpm i --only prod)",
+		"predeploy": "pnpm run clean && pnpm run build",
+
 		"clean": "rimraf ./public/*",
-		"build:theme": "(cd ./themes/scarecrow && pnpm i --only prod)",
-		"prebuild": "pnpm run build:theme",
 		"build": "hugo --verbose",
-		"preserve": "pnpm run prebuild",
 		"serve": "hugo server --watch --verbose",
-		"preserve:dev": "pnpm run prebuild",
-		"serve:dev": "hugo server --watch --verbose --buildFuture --buildDrafts",
-		"predeploy": "pnpm run clean && pnpm run build"
+		"serve:dev": "hugo server --watch --verbose --buildFuture --buildDrafts"
 	},
 	"devDependencies": {
 		"rimraf": "*"
