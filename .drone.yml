@@ -20,7 +20,7 @@ steps:
     path: /usr/local/bin
   commands:
   - npx pnpm i
-  - npx pnpm run install-theme
+  - (cd /drone/src/theme/scarecrow/ && npx pnpm run i --only prod)
   - cp /drone/src/theme/scarecrow/node_modules/fuse.js/dist/fuse.js /drone/src/theme/scarecrow/assets/scripts/fuse.min.js
   - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.62.0/hugo_extended_0.62.0_Linux-64bit.deb
   - dpkg -i hugo.deb
