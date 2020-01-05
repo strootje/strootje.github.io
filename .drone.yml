@@ -1,5 +1,6 @@
 ---
 kind: pipeline
+name: default
 trigger:
   branch:
   - master
