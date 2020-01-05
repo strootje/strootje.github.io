@@ -10,16 +10,16 @@ steps:
 - name: install
   image: node
   commands:
-  - curl -L https://unpkg.com/@pnpm/self-installer | node
-  - pnpm i
+  - npx pnpm i
 
 - name: build
   image: node
   commands:
-  #- curl -L https://unpkg.com/@pnpm/self-installer | node
-  - pnpm run build
+  - npx pnpm run build
 
-
+volumes:
+  - name: cache
+    temp: {}
 
 
 
