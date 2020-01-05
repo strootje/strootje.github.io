@@ -12,8 +12,8 @@ Hi, as can be read in [this][post:an-introductory-of-myself] post, I'm Bas. A So
 {{< timeline >}}
 	{{< timeline/stop title="present" >}}
 
-	{{< timeline/plot title="Freelancing @ Self-Employed" class="is-primary" >}}
-As freelancer I have the unique position to help people build the software they want
+	{{< timeline/plot title="Senior Software Developer @ Cargoguide" class="is-primary" >}}
+At Cargoguide I help in building an [app](https://www.cargoguide.app/), helping freight forwarders get the best price for their freight. Connecting them to freight carriers. We do this with Azure, C#, .netcore, SQL Server and React as a frontend. I work on supporting the team and helping them in making technical decisions
 	{{</ timeline/plot >}}
 
 	{{< timeline/stop title="2019" >}}
