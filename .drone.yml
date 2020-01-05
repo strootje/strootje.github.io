@@ -10,10 +10,8 @@ steps:
 - name: install
   image: node
   volumes:
-  - name: usr-local-bin
+  - name: hugo-bin
     path: /usr/local/bin
-  - name: npm-cache
-    path: ~/.pnpm-store
   commands:
   - npx pnpm i
   - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.62.1/hugo_extended_0.62.1_Linux-64bit.deb
@@ -21,13 +19,14 @@ steps:
 
 - name: build
   image: node
+  volumes:
+  - name: hugo-bin
+    path: /usr/local/bin
   commands:
   - npx pnpm run build
 
 volumes:
-- name: usr-local-bin
-  temp: {}
-- name: npm-cache
+- name: hugo-bin
   temp: {}
 
 
