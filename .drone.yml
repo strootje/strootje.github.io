@@ -1,7 +1,5 @@
 ---
 kind: pipeline
-name: default
-
 trigger:
   branch:
   - master
@@ -12,7 +10,7 @@ steps:
   commands:
   - npx pnpm i
   - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.62.1/hugo_extended_0.62.1_Linux-64bit.deb
-  - sudo dpkg -i hugo.deb
+  - dpkg -i hugo.deb
 
 - name: build
   image: node
