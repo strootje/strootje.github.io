@@ -20,6 +20,7 @@ steps:
     path: /usr/local/bin
   commands:
   - npx pnpm i
+  - npx pnpm run install-theme
   - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.62.1/hugo_extended_0.62.1_Linux-64bit.deb
   - dpkg -i hugo.deb
 

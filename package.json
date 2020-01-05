@@ -4,7 +4,7 @@
 	"version": "0.1.0",
 	"description": "My personal portfolio",
 	"scripts": {
-		"preinstall": "(cd ./themes/scarecrow && pnpm i --only prod)",
+		"install-theme": "(cd ./themes/scarecrow && pnpm i --only prod)",
 		"predeploy": "pnpm run clean && pnpm run build",
 
 		"clean": "rimraf ./public/*",
