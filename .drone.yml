@@ -1,0 +1,69 @@
+---
+kind: pipeline
+name: default
+
+steps:
+- name: install
+  image: node
+  commands:
+  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - pnpm i
+
+- name: build
+  image: node
+  commands:
+  #- curl -L https://unpkg.com/@pnpm/self-installer | node
+  - pnpm run build
+
+
+
+
+
+
+# language: node_js
+# node_js: lts/*
+
+# cache:
+#   npm: true
+#   directories:
+#   - $HOME/.pnpm-store/
+
+# addons:
+#   apt:
+#     sources:
+#       - ubuntu-toolchain-r-test
+#     packages:
+#       - libcairo2-dev
+#       - libjpeg8-dev
+#       - libpango1.0-dev
+#       - libgif-dev
+#       - librsvg2-dev
+#       - g++-4.9
+
+# env:
+#   - CXX=g++-4.9
+
+# before_install:
+# - curl -L https://unpkg.com/@pnpm/self-installer | node
+# # This workaround is required to avoid libstdc++ errors while running "extended" hugo with SASS support.
+# # See: https://discourse.gohugo.io/t/solved-hugo-v44-extended-and-relocation-errors-on-travis/13029/5
+# - wget -q -O libstdc++6 http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.12_amd64.deb
+# - sudo dpkg --force-all -i libstdc++6
+# install:
+# - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.62.1/hugo_extended_0.62.1_Linux-64bit.deb
+# - sudo dpkg -i hugo.deb
+# - npm install
+
+# script:
+# - pnpm run build
+
+# deploy:
+#   provider: pages
+#   repo: strootje/strootje.github.io
+#   target-branch: master
+#   github-token: $GITHUB_TOKEN
+#   keep-history: true
+#   skip-cleanup: true
+#   local-dir: ./public
+#   on:
+#     branch: master

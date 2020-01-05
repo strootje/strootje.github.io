@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/strootje/strootje.com.svg?branch=master)](https://travis-ci.org/strootje/strootje.com)
-
 # Strootje.com
+[![Build Status](https://drone.strootje.com/api/badges/strootje/strootje.com/status.svg?ref=refs/heads/master)](https://drone.strootje.com/strootje/strootje.com)
 
-TODO:
-https://docs.travis-ci.com/user/deployment/custom/
+## Usage
+```
+pnpm run serve
+```
 
-## Themes
-* [pulp](https://themes.gohugo.io//theme/pulp/post/)
-* [Cacao Enhanced](https://themes.gohugo.io//theme/cocoa-eh-hugo-theme/)
+## Theme
+Custom build theme `Scarecrow`
