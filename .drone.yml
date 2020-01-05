@@ -10,7 +10,7 @@ steps:
 - name: install
   image: node
   commands:
-  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  #- curl -L https://unpkg.com/@pnpm/self-installer | node
   - pnpm i
 
 - name: build
