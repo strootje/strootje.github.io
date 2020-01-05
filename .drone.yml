@@ -30,7 +30,7 @@ steps:
   - name: hugo-bin
     path: /usr/local/bin
   commands:
-  - npx pnpm run build
+  - hugo
 
 volumes:
 - name: hugo-bin
