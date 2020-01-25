@@ -19,11 +19,11 @@ steps:
   - name: hugo-bin
     path: /usr/local/bin
   commands:
+  - wget -qO hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.63.1/hugo_extended_0.63.1_Linux-64bit.deb
+  - dpkg -i hugo.deb
   - npx pnpm i
   - (cd /drone/src/themes/scarecrow/ && npx pnpm i --only prod)
   - cp /drone/src/themes/scarecrow/node_modules/fuse.js/dist/fuse.js /drone/src/themes/scarecrow/assets/scripts/fuse.min.js
-  - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.62.0/hugo_extended_0.62.0_Linux-64bit.deb
-  - dpkg -i hugo.deb
 
 - name: build
   image: node
