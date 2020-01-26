@@ -35,11 +35,14 @@ steps:
 
 - name: deploy
   image: cschlosser/drone-ftps
+  when:
+    branch:
+    - master
   environment:
     PLUGIN_SECURE: false
     PLUGIN_VERIFY: false
-    PLUGIN_DEST_DIR: /drone/src/public
-    PLUGIN_SRC_DIR: ./www
+    PLUGIN_SRC_DIR: /drone/src/public
+    PLUGIN_DEST_DIR: ./www
     PLUGIN_HOSTNAME:
       from_secret: SFTP_HOST
     FTP_USERNAME:
