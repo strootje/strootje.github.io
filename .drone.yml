@@ -31,21 +31,20 @@ steps:
   - name: hugo-bin
     path: /usr/local/bin
   commands:
-  - hugo
+  - npx pnpm run build
 
 - name: deploy
   image: cschlosser/drone-ftps
-  settings:
-    secure: true
-    clean_dir: true
-    host: sftp://strootje.com.transurl.nl
-    secrets: [ SFTP_USER, SFTP_PASS ]
-    src_dir: /drone/src/public
-    dest_dir: /www
   environment:
-    SFTP_USER:
+    PLUGIN_SECURE: false
+    PLUGIN_VERIFY: false
+    PLUGIN_DEST_DIR: /drone/src/public
+    PLUGIN_SRC_DIR: ./www
+    PLUGIN_HOSTNAME:
+      from_secret: SFTP_HOST
+    FTP_USERNAME:
       from_secret: SFTP_USER
-    SFTP_PASS:
+    FTP_PASSWORD:
       from_secret: SFTP_PASS
 
 
