@@ -40,7 +40,7 @@ steps:
     - master
   environment:
     PLUGIN_SECURE: true
-    PLUGIN_VERIFY: true
+    PLUGIN_VERIFY: false
     PLUGIN_CLEAN_DIR: true
     PLUGIN_DEST_DIR: ./www
     PLUGIN_INCLUDE: ^public/.*$
