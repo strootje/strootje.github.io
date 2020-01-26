@@ -39,8 +39,8 @@ steps:
     branch:
     - master
   environment:
-    PLUGIN_SECURE: false
-    PLUGIN_VERIFY: false
+    PLUGIN_SECURE: true
+    PLUGIN_VERIFY: true
     PLUGIN_SRC_DIR: /public
     PLUGIN_DEST_DIR: ./www
     PLUGIN_HOSTNAME:
