@@ -35,13 +35,18 @@ steps:
 
 - name: deploy
   image: cschlosser/drone-ftps
-  # settings:
-  secure: true
-  clean_dir: true
-  host: sftp://strootje.com.transurl.nl
-  secrets: [ SFTP_USER, SFTP_PASS ]
-  src_dir: /drone/src/public
-  dest_dir: /www
+  settings:
+    secure: true
+    clean_dir: true
+    host: sftp://strootje.com.transurl.nl
+    secrets: [ SFTP_USER, SFTP_PASS ]
+    src_dir: /drone/src/public
+    dest_dir: /www
+  environment:
+    SFTP_USER:
+      from_secret: SFTP_USER
+    SFTP_PASS:
+      from_secret: SFTP_PASS
 
 
 # - name: publish
