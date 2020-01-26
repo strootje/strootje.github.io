@@ -35,9 +35,10 @@ steps:
 - name: build
   image: plugins/hugo
   settings:
-    hugo_version: extended_0.63.1
-    url: https://strootje.com
+    hugo_version: 0.63.1
+    extended: true
     validate: true
+    url: https://strootje.com
 
 # - name: publish
 #   image: plugins/gh-pages
