@@ -41,7 +41,7 @@ steps:
   environment:
     PLUGIN_SECURE: false
     PLUGIN_VERIFY: false
-    PLUGIN_SRC_DIR: ./public
+    PLUGIN_SRC_DIR: /public
     PLUGIN_DEST_DIR: ./www
     PLUGIN_HOSTNAME:
       from_secret: SFTP_HOST
