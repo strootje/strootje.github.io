@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>welcome on strootje</title>
+    <link>https://www.strootje.com/tags/welcome/</link>
+    <description>Recent content in welcome on strootje</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Feb 2019 06:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.strootje.com/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An introductory of myself</title>
+      <link>https://www.strootje.com/posts/an-introductory-of-myself/</link>
+      <pubDate>Fri, 15 Feb 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/an-introductory-of-myself/</guid>
+      <description>To see what I can do for you, see this page.
+ Hi, my name is Bastiaan Stroosnijder, but good luck pronouncing that. My friends just call me Bas. I&#39;m a 28 year old web/software engineer currently living in the Ntherlands. In July of 2017 they found a critical bug in genetic code which made my heartmuscle grow a lot larger that normal. As there is no fix yet, the surgeon proposed a workaround that consisted of adding an display: none; to the .</description>
+    </item>
+    
+  </channel>
+</rss>

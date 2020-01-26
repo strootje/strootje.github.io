@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on strootje</title>
+    <link>https://www.strootje.com/posts/</link>
+    <description>Recent content in Posts on strootje</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Aug 2019 06:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.strootje.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why I love sports so much</title>
+      <link>https://www.strootje.com/posts/why-i-love-sports-so-much/</link>
+      <pubDate>Tue, 06 Aug 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/why-i-love-sports-so-much/</guid>
+      <description>&lt;p&gt;So recently, while cleaning my house, I discovered that I currently own more pairs of sport shoes than regular shoes. This made me realize how important sports are for me.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Basic Visual Testing Automated in Travis</title>
+      <link>https://www.strootje.com/posts/basic-visual-testing-in-travis/</link>
+      <pubDate>Fri, 15 Mar 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/basic-visual-testing-in-travis/</guid>
+      <description>&lt;p&gt;Ever since I have worked on websites I always hated the proces to testing pages in different browsers. And since I created the &lt;a href=&#34;https://github.com/strootje/hugo-scarecrow-theme/&#34;&gt;Scarecrow&lt;/a&gt; theme for &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and am actually using it on this website I&#39;ve put off testing for as long as possible. But I noticed the other day the the homepage in chrome, chrome of all browsers, was all messed up.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review - Personal Trainer Luc Ludkiewicz</title>
+      <link>https://www.strootje.com/posts/review-pt-luc-ludkiewicz/</link>
+      <pubDate>Fri, 22 Feb 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/review-pt-luc-ludkiewicz/</guid>
+      <description>&lt;p&gt;Fitness has always interested me. I&#39;ve been doing it on and off for about 2 years now but wasn&#39;t getting the results I wanted.
+So I&#39;ve decided to hire a Personal Trainer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>An introductory of myself</title>
+      <link>https://www.strootje.com/posts/an-introductory-of-myself/</link>
+      <pubDate>Fri, 15 Feb 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/an-introductory-of-myself/</guid>
+      <description>To see what I can do for you, see this page.
+ Hi, my name is Bastiaan Stroosnijder, but good luck pronouncing that. My friends just call me Bas. I&#39;m a 28 year old web/software engineer currently living in the Ntherlands. In July of 2017 they found a critical bug in genetic code which made my heartmuscle grow a lot larger that normal. As there is no fix yet, the surgeon proposed a workaround that consisted of adding an display: none; to the .</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal on strootje</title>
+    <link>https://www.strootje.com/categories/personal/</link>
+    <description>Recent content in personal on strootje</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Aug 2019 06:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.strootje.com/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why I love sports so much</title>
+      <link>https://www.strootje.com/posts/why-i-love-sports-so-much/</link>
+      <pubDate>Tue, 06 Aug 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/why-i-love-sports-so-much/</guid>
+      <description>&lt;p&gt;So recently, while cleaning my house, I discovered that I currently own more pairs of sport shoes than regular shoes. This made me realize how important sports are for me.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review - Personal Trainer Luc Ludkiewicz</title>
+      <link>https://www.strootje.com/posts/review-pt-luc-ludkiewicz/</link>
+      <pubDate>Fri, 22 Feb 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/review-pt-luc-ludkiewicz/</guid>
+      <description>&lt;p&gt;Fitness has always interested me. I&#39;ve been doing it on and off for about 2 years now but wasn&#39;t getting the results I wanted.
+So I&#39;ve decided to hire a Personal Trainer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>An introductory of myself</title>
+      <link>https://www.strootje.com/posts/an-introductory-of-myself/</link>
+      <pubDate>Fri, 15 Feb 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/an-introductory-of-myself/</guid>
+      <description>To see what I can do for you, see this page.
+ Hi, my name is Bastiaan Stroosnijder, but good luck pronouncing that. My friends just call me Bas. I&#39;m a 28 year old web/software engineer currently living in the Ntherlands. In July of 2017 they found a critical bug in genetic code which made my heartmuscle grow a lot larger that normal. As there is no fix yet, the surgeon proposed a workaround that consisted of adding an display: none; to the .</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://www.strootje.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/about/</guid>
+      <description>Hi, as can be read in this post, I&#39;m Bas. A Software engineer with a clear vision on software and how a team should operate. My friends would tell you that I&#39;m very much focused on furthering my personal development and that I&#39;m a life hacker. I believe this is backed up by my sense of curiosity and drive to explore and engage in new activities wherever I can in life.</description>
+    </item>
+    
+  </channel>
+</rss>

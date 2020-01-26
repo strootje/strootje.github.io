@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>snowboarding on strootje</title>
+    <link>https://www.strootje.com/tags/snowboarding/</link>
+    <description>Recent content in snowboarding on strootje</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Aug 2019 06:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.strootje.com/tags/snowboarding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why I love sports so much</title>
+      <link>https://www.strootje.com/posts/why-i-love-sports-so-much/</link>
+      <pubDate>Tue, 06 Aug 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/why-i-love-sports-so-much/</guid>
+      <description>&lt;p&gt;So recently, while cleaning my house, I discovered that I currently own more pairs of sport shoes than regular shoes. This made me realize how important sports are for me.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chrome on strootje</title>
+    <link>https://www.strootje.com/tags/chrome/</link>
+    <description>Recent content in chrome on strootje</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Mar 2019 06:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.strootje.com/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic Visual Testing Automated in Travis</title>
+      <link>https://www.strootje.com/posts/basic-visual-testing-in-travis/</link>
+      <pubDate>Fri, 15 Mar 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.strootje.com/posts/basic-visual-testing-in-travis/</guid>
+      <description>&lt;p&gt;Ever since I have worked on websites I always hated the proces to testing pages in different browsers. And since I created the &lt;a href=&#34;https://github.com/strootje/hugo-scarecrow-theme/&#34;&gt;Scarecrow&lt;/a&gt; theme for &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and am actually using it on this website I&#39;ve put off testing for as long as possible. But I noticed the other day the the homepage in chrome, chrome of all browsers, was all messed up.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
