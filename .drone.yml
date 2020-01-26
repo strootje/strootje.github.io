@@ -40,29 +40,14 @@ steps:
     - master
   commands:
   - apt update && apt install lftp
-  - lftp -e "set sftp:auto-confirm yes; mirror -eR ./public /www" -u ${FTP_USERNAME},${FTP_PASSWORD} ${PLUGIN_HOSTNAME}
+  - lftp -e "set sftp:auto-confirm yes; mirror -eR ./public /www" -u $FTP_USERNAME,$FTP_PASSWORD $PLUGIN_HOSTNAME
   environment:
-    PLUGIN_SECURE: true
-    PLUGIN_VERIFY: false
-    PLUGIN_CLEAN_DIR: true
-    PLUGIN_DEST_DIR: ./www
-    PLUGIN_INCLUDE: ^public/.*$
-    PLUGIN_EXCLUDE: ^\.git/$
     PLUGIN_HOSTNAME:
       from_secret: SFTP_HOST
     FTP_USERNAME:
       from_secret: SFTP_USER
     FTP_PASSWORD:
       from_secret: SFTP_PASS
-
-
-# - name: publish
-#   image: plugins/gh-pages
-#   settings:
-#     username: octocat
-#     password: p455w0rd
-#     pages_directory: public/
-#     upstream_name: upstream
 
 volumes:
 - name: hugo-bin
