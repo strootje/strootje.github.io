@@ -34,10 +34,13 @@ steps:
   - npx pnpm run build
 
 - name: deploy
-  image: cschlosser/drone-ftps
+  image: node
   when:
     branch:
     - master
+  commands:
+  - apt update && apt install lftp
+  - lftp -e "set sftp:auto-confirm yes; mirror -eR ./public /www" -u ${FTP_USERNAME},${FTP_PASSWORD} ${PLUGIN_HOSTNAME}
   environment:
     PLUGIN_SECURE: true
     PLUGIN_VERIFY: false
