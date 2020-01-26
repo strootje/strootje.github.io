@@ -33,6 +33,14 @@ steps:
   commands:
   - hugo
 
+# - name: publish
+#   image: plugins/gh-pages
+#   settings:
+#     username: octocat
+#     password: p455w0rd
+#     pages_directory: public/
+#     upstream_name: upstream
+
 volumes:
 - name: hugo-bin
   temp: {}
