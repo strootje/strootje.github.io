@@ -39,10 +39,7 @@ steps:
     branch:
     - master
   environment:
-    PLUGIN_VERIFY: false
-    PLUGIN_CLEAN_DIR: true
     PLUGIN_SRC_DIR: /public
-    PLUGIN_DEST_DIR: ./www
     PLUGIN_HOSTNAME:
       from_secret: SFTP_HOST
     FTP_USERNAME:
