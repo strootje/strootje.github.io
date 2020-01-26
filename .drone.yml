@@ -25,13 +25,19 @@ steps:
   - (cd /drone/src/themes/scarecrow/ && npx pnpm i --only prod)
   - cp /drone/src/themes/scarecrow/node_modules/fuse.js/dist/fuse.js /drone/src/themes/scarecrow/assets/scripts/fuse.min.js
 
+  #- name: build
+  #  image: node
+  #  volumes:
+  #  - name: hugo-bin
+  #    path: /usr/local/bin
+  #  commands:
+  #  - hugo
 - name: build
-  image: node
-  volumes:
-  - name: hugo-bin
-    path: /usr/local/bin
-  commands:
-  - hugo
+  image: plugins/hugo
+  settings:
+    hugo_version: 0.63.1
+    url: https://strootje.com
+    validate: true
 
 # - name: publish
 #   image: plugins/gh-pages
