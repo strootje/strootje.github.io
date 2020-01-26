@@ -25,20 +25,24 @@ steps:
   - (cd /drone/src/themes/scarecrow/ && npx pnpm i --only prod)
   - cp /drone/src/themes/scarecrow/node_modules/fuse.js/dist/fuse.js /drone/src/themes/scarecrow/assets/scripts/fuse.min.js
 
-  #- name: build
-  #  image: node
-  #  volumes:
-  #  - name: hugo-bin
-  #    path: /usr/local/bin
-  #  commands:
-  #  - hugo
 - name: build
-  image: plugins/hugo
+  image: node
+  volumes:
+  - name: hugo-bin
+    path: /usr/local/bin
+  commands:
+  - hugo
+
+- name: publish
+  image: cschlosser/drone-ftps
   settings:
-    hugo_version: 0.63.1
-    extended: true
-    validate: true
-    url: https://strootje.com
+    secure: true
+    clean_dir: true
+    host: sftp://strootje.com.transurl.nl
+    secrets: [ SFTP_USER, SFTP_PASS ]
+    src_dir: /drone/src/public
+    dest_dir: /www
+
 
 # - name: publish
 #   image: plugins/gh-pages
